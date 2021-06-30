@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.bg {
+  height: 100vh;
+  background: linear-gradient(170deg, #FFD370 50%, transparent 50%) center center/100% 100%, right center/auto 100%;
+  font-family: "Noto Sans TC";
+}
+.bg h1 {
+  font-weight: bold;
+  font-size: 48px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.input-save {
+  max-width: 500px;
+  margin: 10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.input-save .text-todo {
+  width: 500px;
+  height: 48px;
+  font-size: 16px;
+  padding: 25px;
+  letter-spacing: 0.7px;
+  background: #FFFFFF;
+  border: none;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  outline: none;
+}
+.input-save .btn-add {
+  padding: 11px 10px 10px 10px;
+  border: none;
+  color: #fff;
+  background: #333333;
+  font-size: 32px;
+  line-height: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+}
+
+.wrap {
+  max-width: 500px;
+  font-size: 16px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.wrap .filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.wrap .filter .active {
+  color: #333333;
+  border-bottom: 2px solid #333333;
+  font-weight: bold;
+}
+.wrap .filter input {
+  font-family: "Noto Sans TC";
+  font-weight: regular;
+  width: 33.33%;
+  border: none;
+  border-bottom: 2px solid #efefef;
+  color: #9f9a91;
+  font-size: 14px;
+  padding: 16px;
+  background: none;
+  outline: none;
+}
+.wrap .filter input:hover {
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 7px 7px 0px 0px;
+}
+.wrap .done input {
+  border: 2px solid #FFD370;
+}
+.wrap .done p {
+  color: rgba(51, 51, 51, 0.3);
+  text-decoration: line-through;
+}
+.wrap .todo-content {
+  padding: 25px;
+}
+.wrap .todo-content li {
+  margin-bottom: 18px;
+}
+.wrap .todo-content li input {
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #333333;
+  cursor: pointer;
+}
+.wrap .todo-content p {
+  font-size: 16px;
+  display: inline-block;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #9f9a91;
+  width: 90%;
+}
+.wrap .todo-content .cross {
+  cursor: pointer;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-size: 14px;
+  color: #333333;
+  letter-spacing: 0.7px;
+  padding: 3.8%;
+}
+.footer input {
+  background: none;
+  border: none;
+  color: #9F9A91;
+  letter-spacing: 0.7px;
+  cursor: pointer;
+}

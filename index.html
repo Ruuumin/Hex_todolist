@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>六角學院 待辦事項</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg">
+    <h1>TODO LIST</h1>
+    <div class="input-save">
+        <input type="text" placeholder="新增待辦事項" class="text-todo">
+        <input type="button" value="+" class="btn-add">
+    </div>
+    <div class="wrap">
+        <div class="filter">
+            <input type="button" value="全部" class="btn-all active" data-filter="all">
+            <input type="button" value="待完成" class="btn-todo" data-filter="no">
+            <input type="button" value="已完成" class="btn-done" data-filter="done">
+        </div>
+
+        <ul class="todo-content"></ul>
+
+        <div class="footer">
+            <h3 class="count"></h3>
+            <input class="clearDone_btn" type="button" value="清除已完成項目">
+        </div>
+    </div>
+
+    <script src="all.js"></script>
+</body>
+</html>
